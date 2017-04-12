@@ -1,0 +1,28 @@
+uuid: 570924d0-b6e8-49ad-9e95-9ab0e7f010d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.node_hero
+    - field.storage.node.field_reference_hero
+    - node.type.article
+id: node.article.field_reference_hero
+field_name: field_reference_hero
+entity_type: node
+bundle: article
+label: 'Hero Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      node_hero: node_hero
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
